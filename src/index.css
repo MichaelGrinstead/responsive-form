@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+body {
+  height: 100vh;
+  font-family: "Barlow", sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-basic {
+  @apply w-[50%] h-12 rounded-md border-2 p-2 border-black bg-white text-black font-semibold sm:w-[40%] md:w-[30%] lg:w-[25%] xl:w-[20%] 2xl:w-[15%];
+}
+
+.input-basic {
+  @apply w-[75%] h-12 rounded-md border-2 border-black p-2 sm:w-[60%] md:w-[45%] lg:w-[37.5%] xl:w-[30%] 2xl:w-[22.5%];
+}
+
+/* 
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... } 307.8
+*/
